@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversation App Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Conversation → App Builder</h1>
+      <p class="lead">Paste a chat transcript and instantly break it into actionable app requirements.</p>
+
+      <section class="panel">
+        <label for="transcript">Conversation transcript</label>
+        <textarea id="transcript" placeholder="Paste the conversation text here..."></textarea>
+        <div class="actions">
+          <button id="analyzeBtn">Analyze</button>
+          <button id="sampleBtn" class="ghost">Load sample</button>
+          <button id="clearBtn" class="ghost">Clear</button>
+        </div>
+      </section>
+
+      <section id="results" class="grid hidden">
+        <article class="panel">
+          <h2>Core app idea</h2>
+          <ul id="ideaList"></ul>
+        </article>
+        <article class="panel">
+          <h2>Features</h2>
+          <ul id="featureList"></ul>
+        </article>
+        <article class="panel">
+          <h2>User stories</h2>
+          <ul id="storyList"></ul>
+        </article>
+        <article class="panel">
+          <h2>Tech suggestions</h2>
+          <ul id="techList"></ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
